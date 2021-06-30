@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="18dp"
+    android:elevation="8dp"
+    android:id="@+id/home_row"
+    card_view:cardElevation="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentlayout"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/food"
+            android:scaleType="centerCrop"
+            android:id="@+id/resturant_img"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Healthy Food"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic"
+                    android:id="@+id/resturant_name"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/resturant_name">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 "
+                        android:textSize="12sp"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="280"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/resturant_name"
+                        android:id="@+id/resturant_rate"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/person"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_rating_foreground"
+                    android:layout_toLeftOf="@+id/resturant_rating"
+                    android:id="@+id/resturant_star"/>
+                <TextView
+                    android:id="@+id/resturant_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/resturant_fav"
+                    android:layout_width="45dp"
+                    android:layout_height="41dp"
+                    android:layout_below="@+id/resturant_rating"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_favorite_foreground" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

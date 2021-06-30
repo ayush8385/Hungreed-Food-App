@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".activity.user">
+
+    <ImageView
+        android:id="@+id/brandlogo"
+        android:layout_width="241dp"
+        android:layout_height="247dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/hungreed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Delivery app"
+        android:textStyle="normal"
+        android:layout_below="@+id/brandlogo"
+        android:textSize="25sp"
+        android:id="@+id/txtfood"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20sp"
+        android:paddingHorizontal="120dp"
+        android:paddingVertical="6dp"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/txtfood"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:id="@+id/loginbtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="20sp"
+        android:paddingHorizontal="110dp"
+        android:paddingVertical="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:layout_below="@+id/loginbtn"
+        android:textColor="#fff"
+        android:id="@+id/signbtn"/>
+
+
+</RelativeLayout>

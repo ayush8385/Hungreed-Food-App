@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="18dp"
+    android:elevation="8dp"
+    android:id="@+id/home_row"
+    card_view:cardElevation="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food"
+            android:id="@+id/fav_img"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dominos Pizza"
+                android:textSize="22sp"
+                android:id="@+id/fav_name"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/fav_name">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9 "
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="280"
+                    android:textSize="12sp"
+                    android:id="@+id/fav_rate"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/person"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_rating_foreground"
+                android:layout_toLeftOf="@+id/fav_rating"
+                android:id="@+id/fav_star"/>
+            <TextView
+                android:id="@+id/fav_rating"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:paddingTop="8dp"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/fav_fav"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/fav_rating"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:clickable="true"
+                android:src="@drawable/ic_favorite_foreground" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

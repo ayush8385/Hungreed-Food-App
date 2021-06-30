@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/splash_back"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_logo"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Your Name"
+        android:textSize="25sp"
+        android:background="@drawable/edtxt"
+        android:paddingVertical="7dp"
+        android:layout_marginTop="22dp"
+        android:paddingHorizontal="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_below="@+id/profile_logo"
+        android:id="@+id/profile_name"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Your Number"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:background="@drawable/edtxt"
+        android:paddingVertical="7dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_number"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Your Email"
+        android:textSize="25sp"
+        android:background="@drawable/edtxt"
+        android:paddingVertical="7dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/profile_number"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_email"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Your Address"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:background="@drawable/edtxt"
+        android:paddingVertical="7dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/profile_email"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_address"/>
+</RelativeLayout>

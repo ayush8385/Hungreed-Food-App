@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:padding="30dp"
+    tools:context=".activity.Login">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/hungreed"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edtxt"
+        android:id="@+id/mobile"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:background="@drawable/edtxt"
+        android:id="@+id/pass"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_login"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:paddingVertical="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="Forgot Paassword?"
+        android:clickable="true"
+        android:layout_below="@+id/button_login"
+        android:layout_alignParentRight="true"
+        android:id="@+id/forgot"/>
+    <ImageView
+        android:id="@+id/back_logo"
+        android:layout_width="45dp"
+        android:clickable="true"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_back_foreground" />
+
+</RelativeLayout>
