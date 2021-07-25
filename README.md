@@ -3,7 +3,9 @@ Food Ordering App
 
 This is the Sample Project for Food App
 
+Using this you can place your food order and list your favorite Restaurants
 
+Check your Order History
 
 <img src="https://user-images.githubusercontent.com/63926489/126894116-f67171d6-d83d-47e1-aa6a-62cb1dc2a95d.png" width="200" height="400">
 
