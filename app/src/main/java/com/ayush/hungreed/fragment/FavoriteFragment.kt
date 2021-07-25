@@ -24,6 +24,7 @@ class FavoriteFragment : Fragment() {
     lateinit var progressBar: ProgressBar
     lateinit var recyclerAdapter: FavoriterecyclerAdapter
     lateinit var layoutManager:RecyclerView.LayoutManager
+
     var dbFoodList= listOf<FoodEntity>()
 
     override fun onCreate(savedInstanceState: Bundle?) {

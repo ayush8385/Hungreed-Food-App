@@ -54,6 +54,7 @@ class HomerecyclerAdapter(val context: Context,val itemList:ArrayList<Resturants
            )
 
         val checkFav=FoodItems.DBAsyncTask(context,foodEntity,1).execute()
+
         val fav=checkFav.get()
         if(fav){
             holder.resturantFav.setImageResource(R.drawable.ic_lmyfav_foreground)
